@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+footer {
+  font-size: 0.7rem;
+}
+
+article {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  border: 3px solid yellow;
+  background-color: lightyellow;
+}
+
+article:first-child {
+  background-color: gray;
+}
+
+article:last-child {
+  background-color: lightblue;
+}
+
+article > div {
+  width: 250px;
+  border: 2px solid darkgreen;
+  padding: 50px 10px 30px 20px;
+  margin: 10px;
+  font-family: "Hi Melody", sans-serif;
+  line-height: 1.6;
+}
+
+h3 {
+  color: red;
+}
+/*
+* {
+  color: lightblue;
+}
+
+h5 {
+  background-color: lightgray;
+}
+
+#m1 {
+  background-color: #110101;
+  color: rgba(255, 255, 0, 0.4);
+}
+
+#m2 {
+  display: none;
+}
+*/
+
+.movie {
+  font-size: 0.7rem;
+}
+
+
+[src] {
+  border: 3px solid yellow;
+}
+
+[class="movie"]{
+  border: 3px dotted red;
+}
+
+article div::before{
+  content: '[영화 소개] ';
+  font-weight: bold;
+  color: red;
+}
+
+article div::after{
+  content: ' (생략)';
+  font-style: italic;
+  color: lightgreen;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:hover{
+  text-decoration: underline;
+  background-color: blue;
+  color: white;
+}
+
+a:active {
+  background-color: hotpink;
+  color: white;
+}
+
+a:visted {
+  textdecoration: none;
+  color: orange;
+}
+
+div#header_title {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  font-famliy: "Black Han Sans", sans-serif;
+}
+
